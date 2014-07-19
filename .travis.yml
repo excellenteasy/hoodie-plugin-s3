@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '0.10'
+before_script:
+- npm install -g grunt-cli
+cache:
+  directories:
+  - node_modules
+notifications:
+  email: false
+  slack:
+    secure: L+QQ26rrYnW78OlkXOvVEodH804g+tTGGx44me8qmiKnbtwm7Lo1ds5IjoPMvIDR7QSCCVwouRd25ZgYDdO6APZH792xY/WGZ44h4ULvGwvOgfr0LmtAv5G/sL0lmrgRabrn7w6kOOhst31l20+trfjyqvFpISHQFoNPj1/yUy4=
+deploy:
+  provider: npm
+  email: info@excellenteasy.com
+  api_key:
+    secure: oAKwFX8QVRDYp4+02eE2RMsxprIoXBSJtIeBpBuxQMbl7MTv1K6PY7wMzkvcLrCCWmJ0Ek6hnInO0ySrgJfJLG8leAdPTWhol35xJHO4wp4/RxhkBWd9lSvGd80ykb111pNZU+V2ncoJDnu4z1MLNtOeyUA634C7mtFxJNKXs/8=
+  on:
+    tags: true
+    repo: excellenteasy/hoodie-plugin-s3
