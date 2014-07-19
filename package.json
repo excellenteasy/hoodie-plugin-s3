@@ -20,10 +20,13 @@
   },
   "hoodie": {
     "plugins": [
-      "hoodie-plugin-users"
+      "hoodie-plugin-users",
+      "hoodie-plugin-s3"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.0.8"
+  },
   "scripts": {
     "test": "grunt test"
   }

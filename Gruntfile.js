@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     jshint: {
       files: [
         'Gruntfile.js',
-        'hoodie.template.js',
+        'hoodie.s3.js',
         'worker.js',
         'hooks/*.js'
       ],
@@ -102,7 +102,14 @@ module.exports = function (grunt) {
     'shell:removePlugin'
   ]);
 
-  grunt.registerTask('default', []);
+  grunt.registerTask('default', ['serve']);
+  grunt.registerTask('serve', [
+    'env:test',
+    'shell:npmLink',
+    'shell:installPlugin',
+    'hoodie:start',
+    'watch:keepalive'
+  ]);
   grunt.registerTask('test', [
     'jshint',
     'test:unit',
