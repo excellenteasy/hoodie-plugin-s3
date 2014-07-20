@@ -2,7 +2,6 @@
  * Hoodie plugin s3
  */
 
-var couchr = require('couchr');
 var AWS = require('aws-sdk');
 
 var createAuthenticatedS3Instance = function(s3Config) {
