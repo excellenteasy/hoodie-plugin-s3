@@ -16,5 +16,5 @@ deploy:
   api_key:
     secure: oAKwFX8QVRDYp4+02eE2RMsxprIoXBSJtIeBpBuxQMbl7MTv1K6PY7wMzkvcLrCCWmJ0Ek6hnInO0ySrgJfJLG8leAdPTWhol35xJHO4wp4/RxhkBWd9lSvGd80ykb111pNZU+V2ncoJDnu4z1MLNtOeyUA634C7mtFxJNKXs/8=
   on:
+    all_branches: true
     tags: true
-    repo: excellenteasy/hoodie-plugin-s3
